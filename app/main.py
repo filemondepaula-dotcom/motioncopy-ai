@@ -14,7 +14,7 @@ from google.genai import types
 load_dotenv()
 
 API_KEY = os.getenv("GEMINI_API_KEY")
-MODEL = os.getenv("GEMINI_MODEL", "gemini-3.7-flash")
+MODELO = os.getenv("GEMINI_MODEL", "gemini-3.8-flash")
 MAX_UPLOAD_MB = int(os.getenv("MAX_UPLOAD_MB", "100"))
 
 app = FastAPI(title="MotionCopy AI API", version="0.2.0")
